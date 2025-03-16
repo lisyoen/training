@@ -2,11 +2,12 @@
   "name": "training",
   "version": "1.0.0",
   "description": "개발 연습",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && npm run copy",
-    "copy": "copyfiles -u 1 src/**/*.html deploy/"
+    "copy": "copyfiles -u 1 src/**/*.html deploy/",
+    "run": "node ./deploy/app.js"
   },
   "repository": {
     "type": "git",
