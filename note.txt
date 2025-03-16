@@ -1,0 +1,16 @@
+copilot 이 가이드해준 구조
+project/
+├── src/                # TypeScript 소스 코드
+│   ├── app.ts
+│   ├── index.html      # (Optional) 개발 중 HTML 파일
+│   └── ...
+├── dist/               # TypeScript 컴파일 결과물
+│   ├── app.js
+│   ├── index.html      # (빌드 과정에서 복사된 HTML 파일)
+│   └── ...
+├── public/             # 정적 파일 (CSS, 이미지 등)
+│   ├── styles.css
+│   └── ...
+├── package.json
+├── tsconfig.json
+└── Dockerfile

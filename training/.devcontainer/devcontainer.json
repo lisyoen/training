@@ -1,0 +1,17 @@
+{
+  "name": "Training Project",
+  "dockerFile": "Dockerfile",
+  "context": "..",
+  "appPort": [
+    3000
+  ],
+  "extensions": [
+    "ms-azuretools.vscode-docker",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint"
+  ],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "postCreateCommand": "npm install"
+}

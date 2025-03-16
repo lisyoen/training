@@ -1,0 +1,20 @@
+# Ignore node_modules directory
+node_modules
+
+# Ignore log files
+*.log
+
+# Ignore environment variable files
+.env
+
+# Ignore TypeScript output directory
+dist
+
+# Ignore Dockerfile and .dockerignore itself
+Dockerfile
+.dockerignore
+
+# Ignore any other files or directories you want to exclude from the Docker context
+*.ts
+*.js.map
+*.tsbuildinfo
