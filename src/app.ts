@@ -13,7 +13,11 @@ app.use(express.static(path.join(__dirname)));
 // 정적 파일 제공: 현재 디렉토리(__dirname)를 기준으로 정적 파일을 제공
 // 예: HTML, CSS, JS 파일을 클라이언트에 제공
 
-// Handle socket.io connections
+// Serve index.html for the root route
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
 io.on('connection', (socket) => { 
     // 클라이언트가 Socket.IO를 통해 연결되었을 때 실행
     console.log('A user connected'); // 연결된 사용자 로그 출력
